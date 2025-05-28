@@ -1,9 +1,10 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "creacionDeUniversidades" {
+  const sanMartin = new Universidad(provincia = "BuenosAires", honorarioPorhora = 3500)
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
-  }
+  test "san martin: esta en la provincia de bsas, los honorarios recomendados son de 3500" {
+  
 
+}
 }

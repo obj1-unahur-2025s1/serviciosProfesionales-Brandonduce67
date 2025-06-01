@@ -1,5 +1,6 @@
 import example.*
 
+<<<<<<< HEAD
 describe "tests"{
     const sanMartin = new Universidad(provincias = "Buenos Aires", honorarioPorHora = 3500)
     const rosario = new Universidad(provincias = "Santa Fe", honorarioPorHora = 2800)
@@ -45,3 +46,13 @@ describe "tests"{
   }
  
 }
+=======
+describe "creacionDeUniversidades" {
+  const sanMartin = new Universidad(provincia = "BuenosAires", honorarioPorhora = 3500)
+
+  test "san martin: esta en la provincia de bsas, los honorarios recomendados son de 3500" {
+  
+
+}
+}
+>>>>>>> c486fac503a9e1534b6cc7d06a014c3e1b52f899

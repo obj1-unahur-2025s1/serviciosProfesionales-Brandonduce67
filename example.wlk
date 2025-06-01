@@ -25,7 +25,6 @@ class Empresa {
   const property profesionalesContratados = []
   var property honorarioReferencia  
 
-<<<<<<< HEAD
 
   method contratarTodos(listaProfesionales){
     profesionalesContratados.addAll(listaProfesionales)
@@ -33,16 +32,10 @@ class Empresa {
   method contratarProfesional(unProfesional) {
     profesionalesContratados.add(unProfesional)
     } 
-=======
-  method contratarProfesional(unProfesional) {
-    profesionalesContratados.add(unProfesional)
-  } 
->>>>>>> c486fac503a9e1534b6cc7d06a014c3e1b52f899
   method cuantosEstudiaronEn(unaUniversidad) = profesionalesContratados.filter({profesional => profesional.universidad() == unaUniversidad}).size()
   method profesionalesCaros() = profesionalesContratados.filter({profesional => profesional.honorarioPorHora() > honorarioReferencia})
   method universidadesFormadoras() = profesionalesContratados.map({profesional => profesional.universidad()}).asSet()
   method profesionalBarato() = profesionalesContratados.min({profesional => profesional.honorarioPorHora()})  
-<<<<<<< HEAD
   method genteAcotada() = profesionalesContratados.all({profesional => profesional.provincias().size() <= 3})
 }
 
@@ -62,9 +55,3 @@ class SolicitantesClub{
 
   method puedeSerAtendida(unProfesional) = provincias.any({provincia => unProfesional.provincia().contains(provincia)})
 }
-=======
-  method genteAcotada() = profesionalesContratados.all({profesional => profesional.provincias() <= 3}) 
-
-
-}
->>>>>>> c486fac503a9e1534b6cc7d06a014c3e1b52f899
